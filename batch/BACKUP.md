@@ -15,7 +15,7 @@ lyrics/
     manifest.json         # stats, current artist/progress, git commit
     review/               # candidates.csv, review_queue.csv, songs.csv, artists.csv, summary.md
     logs/                 # run.log.gz, nohup.out.gz, backup.log.gz
-    meta/                 # PLAN.md, artists.yaml, schema.sql, batch code/config
+    meta/                 # PLAN.md, PROGRESS.md, artists.yaml, schema.sql, batch code/config
   snapshots/
     YYYYMMDDTHHMMSSZ/
       lyrics.db.gz

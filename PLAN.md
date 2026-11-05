@@ -374,7 +374,7 @@ python -m batch.job --config batch/config.yaml --minutes 120
   - `latest/lyrics.db.gz` — أحدث نسخة من القاعدة (مضغوطة).
   - `latest/review/` — حزمة المراجعة كاملة.
   - `latest/logs/` — `run.log` و`nohup.out` و`backup.log`.
-  - `latest/meta/` — نسخة من `PLAN.md` و`artists.yaml` و`schema.sql` وكود/إعدادات الـ pipeline، حتى لا تعتمد الاستعادة على بقاء الـ VM.
+  - `latest/meta/` — نسخة من `PLAN.md` و`PROGRESS.md` و`artists.yaml` و`schema.sql` وكود/إعدادات الـ pipeline، حتى لا تعتمد الاستعادة على بقاء الـ VM.
   - `latest/manifest.json` — إحصاءات، الفنان الحالي، التقدم، وcommit.
   - `snapshots/YYYYMMDDTHHMMSSZ/` — نسخة ثابتة لكل دورة، لا تُحذف تلقائياً.
 - لا ينسخ `batch/cache/` لأنه قابل لإعادة التوليد؛ القاعدة نفسها تحفظ كل التقدم المهم.

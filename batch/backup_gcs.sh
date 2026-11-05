@@ -77,7 +77,7 @@ PY
 
   # Recovery metadata: plan, registry, schema, config and pipeline code.
   mkdir -p "$tmp/latest/meta"
-  for f in PLAN.md artists.yaml schema.sql batch/BACKUP.md batch/backup_gcs.sh \
+  for f in PLAN.md PROGRESS.md artists.yaml schema.sql batch/BACKUP.md batch/backup_gcs.sh \
            batch/config.yaml batch/requirements.txt batch/job.py batch/quality.py \
            batch/sources.py batch/db.py batch/apply_review.py batch/README.md; do
     if [ -f "$f" ]; then
