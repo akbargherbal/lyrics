@@ -356,6 +356,111 @@ python -m batch.job --config batch/config.yaml --minutes 120
 
 ---
 
+## 6.2) النسخ الاحتياطي والاستعادة والاستئناف
+
+### المسار والأدوات
+
+- **النسخ الاحتياطي:** `gs://akbar-december-2024-backup/lyrics/`
+- **السكربت:** `batch/backup_gcs.sh`
+- **دليل مختصر:** `batch/BACKUP.md`
+- **السجل:** `batch/backup.log`
+
+### آلية العمل
+
+- يعمل كعملية منفصلة تماماً عن `python -m batch.job`، فلا يوقف الـ Job ولا يتأثر به.
+- ينسخ كل **15 دقيقة** افتراضياً (`BACKUP_INTERVAL_SECONDS`).
+- يستخدم **SQLite Online Backup API**، لذا يلتقط نسخة متسقة حتى مع وجود `-wal` و`-shm` أثناء الكتابة.
+- يرفع:
+  - `latest/lyrics.db.gz` — أحدث نسخة من القاعدة (مضغوطة).
+  - `latest/review/` — حزمة المراجعة كاملة.
+  - `latest/logs/` — `run.log` و`nohup.out` و`backup.log`.
+  - `latest/meta/` — نسخة من `PLAN.md` و`artists.yaml` و`schema.sql` وكود/إعدادات الـ pipeline، حتى لا تعتمد الاستعادة على بقاء الـ VM.
+  - `latest/manifest.json` — إحصاءات، الفنان الحالي، التقدم، وcommit.
+  - `snapshots/YYYYMMDDTHHMMSSZ/` — نسخة ثابتة لكل دورة، لا تُحذف تلقائياً.
+- لا ينسخ `batch/cache/` لأنه قابل لإعادة التوليد؛ القاعدة نفسها تحفظ كل التقدم المهم.
+- يتوقف تلقائياً بعد دورتين متتاليتين بدون Job (حوالي 30 دقيقة)، مع ترك آخر نسخة.
+
+### التشغيل والتحقق
+
+```bash
+# نسخة واحدة فورية (للاختبار)
+bash batch/backup_gcs.sh --once
+
+# حلقة النسخ الدورية في الخلفية
+nohup bash batch/backup_gcs.sh >/dev/null 2>&1 &
+
+# التحقق
+gcloud --quiet storage ls -r gs://akbar-december-2024-backup/lyrics/ | head -30
+gcloud --quiet storage cat gs://akbar-december-2024-backup/lyrics/latest/manifest.json
+```
+
+- المتطلب الوحيد: `gcloud auth login` بحساب يملك صلاحية الكتابة على الـ bucket.
+- إذا كان `gcloud config get-value project` فارغاً فهذا لا يمنع الوصول إلى bucket محدد.
+- يمكن تغيير الوجهة أو الفاصل الزمني:
+
+```bash
+BACKUP_BUCKET=gs://another-bucket/lyrics BACKUP_INTERVAL_SECONDS=600 \
+  nohup bash batch/backup_gcs.sh >/dev/null 2>&1 &
+```
+
+### الاستعادة
+
+> **مهم:** القاعدة تعمل بـ WAL. لا تنسخ `data/lyrics.db` وحدها أثناء تشغيل الـ Job. استخدم النسخة المرفوعة، أو أوقف الـ Job أولاً.
+
+```bash
+# 1) تأكد من إيقاف الـ Job (أو أوقفه بأمان)
+pkill -f "python -m batch.job"
+
+# 2) احذف ملفات WAL القديمة قبل الاستعادة
+rm -f data/lyrics.db data/lyrics.db-wal data/lyrics.db-shm
+
+# 3) نزّل أحدث نسخة وفك ضغطها
+gcloud storage cp gs://akbar-december-2024-backup/lyrics/latest/lyrics.db.gz /tmp/lyrics.db.gz
+gunzip -c /tmp/lyrics.db.gz > data/lyrics.db
+
+# 4) استعد حزمة المراجعة
+rm -rf review
+gcloud storage cp -r gs://akbar-december-2024-backup/lyrics/latest/review ./review
+```
+
+لاستعادة لحظة محددة بدل `latest`:
+
+```bash
+gcloud storage cp gs://akbar-december-2024-backup/lyrics/snapshots/YYYYMMDDTHHMMSSZ/lyrics.db.gz /tmp/lyrics.db.gz
+```
+
+### الاستئناف بعد التوقف
+
+- أعد تشغيل نفس الأمر:
+
+```bash
+source .venv/bin/activate
+python -m batch.job --config batch/config.yaml --minutes 120
+```
+
+- الـ Job يقرأ `completed_artists` من `job_state` ويتخطى الفنانين المكتملين.
+- إذا توقف في منتصف فنان، يعيد ذلك الفنان من البداية مع الاستفادة من `batch/cache/`.
+- `--force` لإعادة معالجة الفنانين المكتملين أيضاً.
+- كل تشغيل يصدّر حزمة مراجعة جديدة في `review/`، حتى لو لم يكتمل كل الفنانين.
+- بعد الاستعادة من نسخة احتياطية، شغّل الـ Job بنفس الأمر؛ سيستأنف من آخر حالة محفوظة في القاعدة.
+
+### قائمة فحص بعد أي انقطاع
+
+1. تأكد هل الـ Job ما زال يعمل: `pgrep -af "python -m batch.job"`.
+2. إذا فُقدت القاعدة أو تلفت، استعد من `latest/` أو من snapshot محدد.
+3. أعد تشغيل الـ Job بنفس الأمر.
+4. تأكد أن حلقة النسخ الاحتياطي تعمل: `pgrep -af backup_gcs.sh`؛ أعد تشغيلها إذا لزم.
+5. راقب `batch/run.log` و`batch/nohup.out`، ثم راجع `review/summary.md`.
+
+### ما لا نفعله
+
+- لا نحذف `data/` أو `review/` أثناء التشغيل.
+- لا ننسخ القاعدة بطريقة غير متسقة أثناء WAL.
+- لا نرفع شيئاً إلى GitHub إلا بطلب صريح.
+- لا نحاول تجاوز حجب LyricFind (403).
+
+---
+
 ## 7) التطبيع والمطابقة
 
 ### تطبيع العربية

@@ -3,6 +3,9 @@ data/
 review/
 batch/cache/
 batch/run.log
+batch/nohup.out
+batch/backup.log
+batch/.backup.lock
 
 # Python
 __pycache__/
