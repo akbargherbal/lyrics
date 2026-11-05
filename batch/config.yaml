@@ -1,0 +1,27 @@
+artists_file: artists.yaml
+db_path: data/lyrics.db
+schema_path: schema.sql
+review_dir: review
+cache_dir: batch/cache
+time_budget_minutes: 120
+
+# ابدأ بالفنانين الذين لدينا لهم بيانات أولية، ثم بقية Tier 1
+priority_artists:
+  - elissa
+  - fadl-shaker
+
+itunes:
+  enabled: true
+  country: US
+  limit: 200
+
+lrclib:
+  enabled: true
+  min_interval: 0.75
+
+existing_sources:
+  - fnanen/artists/elissa/elissa_lyrics.json
+  - fnanen/artists/fadhl-shaker/fadhl-shaker_lyrics.json
+  - kalimataghani/artists/elissa/elissa_lyrics.json
+  - kalimataghani/artists/fadhl-shaker/fadhl-shaker_lyrics.json
+  - fadel_chaker_lyrics.json

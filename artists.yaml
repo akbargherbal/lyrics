@@ -1,0 +1,739 @@
+# القائمة النهائية للفنانين المختارين
+# generated from artists_shortlist_50.txt
+
+version: 1
+generated_at: '2026-11-05'
+selection_status: final
+total_artists: 37
+source_shortlist: artists_shortlist_50.txt
+youtube_playlist: https://www.youtube.com/watch?v=fbK2ySlxAW4&list=PLPpchlY3wT3g
+notes: القائمة النهائية المعتمدة. الروابط والمعرّفات تُملأ في مرحلة Discovery.
+artists:
+- rank: 1
+  tier: 1
+  shortlist_no: 1
+  slug: majid-al-mohandis
+  name_ar: ماجد المهندس
+  name_en: Majid Al Mohandis
+  aliases:
+  - Majid Al Muhandis
+  - Majed Al Mohandis
+  - Majed Al Muhandis
+  - Majid Almohandis
+  - Majid Almuhandis
+  - Majid Al-Mohandis
+  - ماجد المهندس
+  country: العراق
+  country_code: IQ
+  lyricfind_slug: null
+  itunes_artist_id: null
+  musicbrainz_id: null
+  fnanen_url: null
+  kalimataghani_url: null
+  selected: true
+  notes: ''
+- rank: 2
+  tier: 1
+  shortlist_no: 2
+  slug: elissa
+  name_ar: إليسا
+  name_en: Elissa
+  aliases:
+  - اليسا
+  - إليسا
+  - Elissa
+  - Elysa
+  country: لبنان
+  country_code: LB
+  lyricfind_slug: null
+  itunes_artist_id: null
+  musicbrainz_id: null
+  fnanen_url: null
+  kalimataghani_url: null
+  selected: true
+  notes: لدينا بيانات أولية من fnanen و kalimataghani
+- rank: 3
+  tier: 1
+  shortlist_no: 3
+  slug: amr-diab
+  name_ar: عمرو دياب
+  name_en: Amr Diab
+  aliases:
+  - عمرو دياب
+  - Amr Diab
+  - Amro Diab
+  - Amr Abd El Basset
+  - Amr Abdel Basset
+  country: مصر
+  country_code: EG
+  lyricfind_slug: null
+  itunes_artist_id: null
+  musicbrainz_id: null
+  fnanen_url: null
+  kalimataghani_url: null
+  selected: true
+  notes: ''
+- rank: 4
+  tier: 1
+  shortlist_no: 4
+  slug: rabeh-saqer
+  name_ar: رابح صقر
+  name_en: Rabeh Saqer
+  aliases:
+  - رابح صقر
+  - Rabeh Saqer
+  - Rabih Saqer
+  country: السعودية
+  country_code: SA
+  lyricfind_slug: null
+  itunes_artist_id: null
+  musicbrainz_id: null
+  fnanen_url: null
+  kalimataghani_url: null
+  selected: true
+  notes: ''
+- rank: 5
+  tier: 1
+  shortlist_no: 5
+  slug: abdul-majeed-abdullah
+  name_ar: عبد المجيد عبد الله
+  name_en: Abdul Majeed Abdullah
+  aliases:
+  - عبد المجيد عبد الله
+  - Abdul Majeed Abdullah
+  - Abdul Majid Abdullah
+  - Abdulmajeed Abdullah
+  - AbdulMajeed Abdullah
+  - Abdul-Majeed Abdullah
+  country: السعودية
+  country_code: SA
+  lyricfind_slug: null
+  itunes_artist_id: null
+  musicbrainz_id: null
+  fnanen_url: null
+  kalimataghani_url: null
+  selected: true
+  notes: ''
+- rank: 6
+  tier: 1
+  shortlist_no: 6
+  slug: assala-nasri
+  name_ar: أصالة نصري
+  name_en: Assala Nasri
+  aliases:
+  - أصالة نصري
+  - اصالة
+  - Assala
+  - Assala Nasri
+  - Asala Nasri
+  - Assalah Nasri
+  country: سوريا
+  country_code: SY
+  lyricfind_slug: null
+  itunes_artist_id: null
+  musicbrainz_id: null
+  fnanen_url: null
+  kalimataghani_url: null
+  selected: true
+  notes: ''
+- rank: 7
+  tier: 1
+  shortlist_no: 7
+  slug: waleed-al-shami
+  name_ar: وليد الشامي
+  name_en: Waleed Al Shami
+  aliases:
+  - وليد الشامي
+  - Waleed Al Shami
+  - Walid Al Shami
+  country: العراق
+  country_code: IQ
+  lyricfind_slug: null
+  itunes_artist_id: null
+  musicbrainz_id: null
+  fnanen_url: null
+  kalimataghani_url: null
+  selected: true
+  notes: ''
+- rank: 8
+  tier: 1
+  shortlist_no: 8
+  slug: najwa-karam
+  name_ar: نجوى كرم
+  name_en: Najwa Karam
+  aliases:
+  - نجوى كرم
+  - Najwa Karam
+  country: لبنان
+  country_code: LB
+  lyricfind_slug: null
+  itunes_artist_id: null
+  musicbrainz_id: null
+  fnanen_url: null
+  kalimataghani_url: null
+  selected: true
+  notes: ''
+- rank: 9
+  tier: 1
+  shortlist_no: 9
+  slug: wael-kfoury
+  name_ar: وائل كفوري
+  name_en: Wael Kfoury
+  aliases:
+  - وائل كفوري
+  - Wael Kfoury
+  - Wael Kafoury
+  - Wael Kfouri
+  country: لبنان
+  country_code: LB
+  lyricfind_slug: null
+  itunes_artist_id: null
+  musicbrainz_id: null
+  fnanen_url: null
+  kalimataghani_url: null
+  selected: true
+  notes: ''
+- rank: 10
+  tier: 1
+  shortlist_no: 12
+  slug: nawal-el-kuwaitia
+  name_ar: نوال الكويتية
+  name_en: Nawal El Kuwaitia
+  aliases:
+  - نوال الكويتية
+  - نوال
+  - Nawal El Kuwaitia
+  - Nawal Al Kuwaitia
+  - Nawal Kuwaitia
+  - Nawal Al-Kuwaitia
+  country: الكويت
+  country_code: KW
+  lyricfind_slug: null
+  itunes_artist_id: null
+  musicbrainz_id: null
+  fnanen_url: null
+  kalimataghani_url: null
+  selected: true
+  notes: تظهر في القائمة أحياناً باسم Nawal
+- rank: 11
+  tier: 2
+  shortlist_no: 14
+  slug: tamer-hosny
+  name_ar: تامر حسني
+  name_en: Tamer Hosny
+  aliases:
+  - تامر حسني
+  - Tamer Hosny
+  country: مصر
+  country_code: EG
+  lyricfind_slug: null
+  itunes_artist_id: null
+  musicbrainz_id: null
+  fnanen_url: null
+  kalimataghani_url: null
+  selected: true
+  notes: ''
+- rank: 12
+  tier: 2
+  shortlist_no: 15
+  slug: kadim-al-sahir
+  name_ar: كاظم الساهر
+  name_en: Kadim Al Sahir
+  aliases:
+  - كاظم الساهر
+  - Kadim Al Sahir
+  - Kazem Al Saher
+  - Kadim Alsaher
+  - Kadhim Al Sahir
+  - Kazim Al Sahir
+  country: العراق
+  country_code: IQ
+  lyricfind_slug: null
+  itunes_artist_id: null
+  musicbrainz_id: null
+  fnanen_url: null
+  kalimataghani_url: null
+  selected: true
+  notes: ''
+- rank: 13
+  tier: 2
+  shortlist_no: 16
+  slug: hussain-al-jassmi
+  name_ar: حسين الجسمي
+  name_en: Hussain Al Jassmi
+  aliases:
+  - حسين الجسمي
+  - Hussain Al Jassmi
+  - Husain Al Jassmi
+  - Hussein Al Jassmi
+  - Hussain Al Jasmi
+  - Hussein Al Jasmi
+  country: الإمارات
+  country_code: AE
+  lyricfind_slug: null
+  itunes_artist_id: null
+  musicbrainz_id: null
+  fnanen_url: null
+  kalimataghani_url: null
+  selected: true
+  notes: ''
+- rank: 14
+  tier: 2
+  shortlist_no: 17
+  slug: oumaima-taleb
+  name_ar: أميمة طالب
+  name_en: Oumaima Taleb
+  aliases:
+  - أميمة طالب
+  - اميمة طالب
+  - Oumaima Taleb
+  - Omaima Taleb
+  country: تونس
+  country_code: TN
+  lyricfind_slug: null
+  itunes_artist_id: null
+  musicbrainz_id: null
+  fnanen_url: null
+  kalimataghani_url: null
+  selected: true
+  notes: ''
+- rank: 15
+  tier: 2
+  shortlist_no: 18
+  slug: assi-el-hallani
+  name_ar: عاصي الحلاني
+  name_en: Assi El Hallani
+  aliases:
+  - عاصي الحلاني
+  - Assi El Hallani
+  - Assi Al Hallani
+  country: لبنان
+  country_code: LB
+  lyricfind_slug: null
+  itunes_artist_id: null
+  musicbrainz_id: null
+  fnanen_url: null
+  kalimataghani_url: null
+  selected: true
+  notes: ''
+- rank: 16
+  tier: 2
+  shortlist_no: 19
+  slug: fadl-shaker
+  name_ar: فضل شاكر
+  name_en: Fadl Shaker
+  aliases:
+  - فضل شاكر
+  - Fadl Shaker
+  - Fadel Chaker
+  - Fadel Shaker
+  - Fadhl Shaker
+  - Fadhel Shaker
+  - Fadhl Chaker
+  - Fadhel Chaker
+  - Fadl Chaker
+  country: لبنان
+  country_code: LB
+  lyricfind_slug: null
+  itunes_artist_id: null
+  musicbrainz_id: null
+  fnanen_url: null
+  kalimataghani_url: null
+  selected: true
+  notes: لدينا بيانات أولية من fnanen و kalimataghani و LyricFind/LRCLIB
+- rank: 17
+  tier: 2
+  shortlist_no: 22
+  slug: asma-lmnawar
+  name_ar: أسماء لمنور
+  name_en: Asma Lmnawar
+  aliases:
+  - أسماء لمنور
+  - Asma Lmnawar
+  - Asma Lamnawar
+  country: المغرب
+  country_code: MA
+  lyricfind_slug: null
+  itunes_artist_id: null
+  musicbrainz_id: null
+  fnanen_url: null
+  kalimataghani_url: null
+  selected: true
+  notes: ''
+- rank: 18
+  tier: 2
+  shortlist_no: 23
+  slug: sherine-abdel-wahab
+  name_ar: شيرين عبد الوهاب
+  name_en: Sherine Abdel Wahab
+  aliases:
+  - شيرين عبد الوهاب
+  - Sherine Abdel Wahab
+  - Sherine
+  country: مصر
+  country_code: EG
+  lyricfind_slug: null
+  itunes_artist_id: null
+  musicbrainz_id: null
+  fnanen_url: null
+  kalimataghani_url: null
+  selected: true
+  notes: ''
+- rank: 19
+  tier: 2
+  shortlist_no: 25
+  slug: saber-rebai
+  name_ar: صابر الرباعي
+  name_en: Saber Rebai
+  aliases:
+  - صابر الرباعي
+  - Saber Rebai
+  - Saber El Rebai
+  country: تونس
+  country_code: TN
+  lyricfind_slug: null
+  itunes_artist_id: null
+  musicbrainz_id: null
+  fnanen_url: null
+  kalimataghani_url: null
+  selected: true
+  notes: ''
+- rank: 20
+  tier: 2
+  shortlist_no: 26
+  slug: melhim-zain
+  name_ar: ملحم زين
+  name_en: Melhim Zain
+  aliases:
+  - ملحم زين
+  - Melhim Zain
+  - Melhem Zein
+  country: لبنان
+  country_code: LB
+  lyricfind_slug: null
+  itunes_artist_id: null
+  musicbrainz_id: null
+  fnanen_url: null
+  kalimataghani_url: null
+  selected: true
+  notes: ''
+- rank: 21
+  tier: 2
+  shortlist_no: 27
+  slug: marwan-khoury
+  name_ar: مروان خوري
+  name_en: Marwan Khoury
+  aliases:
+  - مروان خوري
+  - Marwan Khoury
+  country: لبنان
+  country_code: LB
+  lyricfind_slug: null
+  itunes_artist_id: null
+  musicbrainz_id: null
+  fnanen_url: null
+  kalimataghani_url: null
+  selected: true
+  notes: ''
+- rank: 22
+  tier: 2
+  shortlist_no: 28
+  slug: nabeel-shuail
+  name_ar: نبيل شعيل
+  name_en: Nabeel Shuail
+  aliases:
+  - نبيل شعيل
+  - Nabeel Shuail
+  - Nabil Shuail
+  country: الكويت
+  country_code: KW
+  lyricfind_slug: null
+  itunes_artist_id: null
+  musicbrainz_id: null
+  fnanen_url: null
+  kalimataghani_url: null
+  selected: true
+  notes: ''
+- rank: 23
+  tier: 2
+  shortlist_no: 29
+  slug: haifa-wahbe
+  name_ar: هيفاء وهبي
+  name_en: Haifa Wahbe
+  aliases:
+  - هيفاء وهبي
+  - Haifa Wahbe
+  - Haifa Wehbe
+  country: لبنان
+  country_code: LB
+  lyricfind_slug: null
+  itunes_artist_id: null
+  musicbrainz_id: null
+  fnanen_url: null
+  kalimataghani_url: null
+  selected: true
+  notes: ''
+- rank: 24
+  tier: 2
+  shortlist_no: 30
+  slug: balqees
+  name_ar: بلقيس
+  name_en: Balqees
+  aliases:
+  - بلقيس
+  - Balqees
+  - Balqees Ahmed Fathi
+  country: اليمن/الإمارات
+  country_code: YE
+  lyricfind_slug: null
+  itunes_artist_id: null
+  musicbrainz_id: null
+  fnanen_url: null
+  kalimataghani_url: null
+  selected: true
+  notes: ''
+- rank: 25
+  tier: 2
+  shortlist_no: 31
+  slug: nawal-al-zoghbi
+  name_ar: نوال الزغبي
+  name_en: Nawal Al Zoghbi
+  aliases:
+  - نوال الزغبي
+  - Nawal Al Zoghbi
+  - Nawal El Zoghbi
+  country: لبنان
+  country_code: LB
+  lyricfind_slug: null
+  itunes_artist_id: null
+  musicbrainz_id: null
+  fnanen_url: null
+  kalimataghani_url: null
+  selected: true
+  notes: ''
+- rank: 26
+  tier: 3
+  shortlist_no: 32
+  slug: jaber-al-kaser
+  name_ar: جابر الكاسر
+  name_en: Jaber Al Kaser
+  aliases:
+  - جابر الكاسر
+  - Jaber Al Kaser
+  country: السعودية
+  country_code: SA
+  lyricfind_slug: null
+  itunes_artist_id: null
+  musicbrainz_id: null
+  fnanen_url: null
+  kalimataghani_url: null
+  selected: true
+  notes: ''
+- rank: 27
+  tier: 3
+  shortlist_no: 34
+  slug: rashed-al-majed
+  name_ar: راشد الماجد
+  name_en: Rashed Al Majed
+  aliases:
+  - راشد الماجد
+  - Rashed Al Majed
+  - Rashed Al Majid
+  - Rashid Al Majed
+  - Rashid Al Majid
+  country: السعودية
+  country_code: SA
+  lyricfind_slug: null
+  itunes_artist_id: null
+  musicbrainz_id: null
+  fnanen_url: null
+  kalimataghani_url: null
+  selected: true
+  notes: ''
+- rank: 28
+  tier: 3
+  shortlist_no: 36
+  slug: nancy-ajram
+  name_ar: نانسي عجرم
+  name_en: Nancy Ajram
+  aliases:
+  - نانسي عجرم
+  - Nancy Ajram
+  country: لبنان
+  country_code: LB
+  lyricfind_slug: null
+  itunes_artist_id: null
+  musicbrainz_id: null
+  fnanen_url: null
+  kalimataghani_url: null
+  selected: true
+  notes: ''
+- rank: 29
+  tier: 3
+  shortlist_no: 37
+  slug: abdullah-al-rowaished
+  name_ar: عبد الله الرويشد
+  name_en: Abdullah Al Rowaished
+  aliases:
+  - عبد الله الرويشد
+  - Abdullah Al Rowaished
+  - Abdullah Al-Rowaished
+  country: الكويت
+  country_code: KW
+  lyricfind_slug: null
+  itunes_artist_id: null
+  musicbrainz_id: null
+  fnanen_url: null
+  kalimataghani_url: null
+  selected: true
+  notes: ''
+- rank: 30
+  tier: 3
+  shortlist_no: 38
+  slug: mohammed-al-bloushi
+  name_ar: محمد البلوشي
+  name_en: Mohammed Al Bloushi
+  aliases:
+  - محمد البلوشي
+  - Mohammed Al Bloushi
+  - Mohamed Al Bloushi
+  country: الإمارات
+  country_code: AE
+  lyricfind_slug: null
+  itunes_artist_id: null
+  musicbrainz_id: null
+  fnanen_url: null
+  kalimataghani_url: null
+  selected: true
+  notes: ''
+- rank: 31
+  tier: 3
+  shortlist_no: 39
+  slug: abadi-al-johar
+  name_ar: عبادي الجوهر
+  name_en: Abadi Al Johar
+  aliases:
+  - عبادي الجوهر
+  - Abadi Al Johar
+  - Abadi Al-Johar
+  country: السعودية
+  country_code: SA
+  lyricfind_slug: null
+  itunes_artist_id: null
+  musicbrainz_id: null
+  fnanen_url: null
+  kalimataghani_url: null
+  selected: true
+  notes: ''
+- rank: 32
+  tier: 3
+  shortlist_no: 40
+  slug: mohammed-abdo
+  name_ar: محمد عبده
+  name_en: Mohammed Abdo
+  aliases:
+  - محمد عبده
+  - Mohammed Abdo
+  - Mohamed Abdo
+  country: السعودية
+  country_code: SA
+  lyricfind_slug: null
+  itunes_artist_id: null
+  musicbrainz_id: null
+  fnanen_url: null
+  kalimataghani_url: null
+  selected: true
+  notes: ''
+- rank: 33
+  tier: 3
+  shortlist_no: 41
+  slug: talal-maddah
+  name_ar: طلال مداح
+  name_en: Talal Maddah
+  aliases:
+  - طلال مداح
+  - Talal Maddah
+  - Talal Madah
+  country: السعودية
+  country_code: SA
+  lyricfind_slug: null
+  itunes_artist_id: null
+  musicbrainz_id: null
+  fnanen_url: null
+  kalimataghani_url: null
+  selected: true
+  notes: ''
+- rank: 34
+  tier: 3
+  shortlist_no: null
+  slug: latifa
+  name_ar: لطيفة
+  name_en: Latifa
+  aliases:
+  - لطيفة
+  - Latifa
+  - Latifa Bint Alaya
+  country: تونس
+  country_code: TN
+  lyricfind_slug: null
+  itunes_artist_id: null
+  musicbrainz_id: null
+  fnanen_url: null
+  kalimataghani_url: null
+  selected: true
+  notes: ''
+- rank: 35
+  tier: 3
+  shortlist_no: null
+  slug: maya-nasri
+  name_ar: مايا نصري
+  name_en: Maya Nasri
+  aliases:
+  - مايا نصري
+  - Maya Nasri
+  country: لبنان
+  country_code: LB
+  lyricfind_slug: null
+  itunes_artist_id: null
+  musicbrainz_id: null
+  fnanen_url: null
+  kalimataghani_url: null
+  selected: true
+  notes: ''
+- rank: 36
+  tier: 3
+  shortlist_no: null
+  slug: majida-el-roumi
+  name_ar: ماجدة الرومي
+  name_en: Majida El Roumi
+  aliases:
+  - ماجدة الرومي
+  - Majida El Roumi
+  country: لبنان
+  country_code: LB
+  lyricfind_slug: null
+  itunes_artist_id: null
+  musicbrainz_id: null
+  fnanen_url: null
+  kalimataghani_url: null
+  selected: true
+  notes: ''
+- rank: 37
+  tier: 3
+  shortlist_no: null
+  slug: mohamed-hamaki
+  name_ar: محمد حماقي
+  name_en: Mohamed Hamaki
+  aliases:
+  - محمد حماقي
+  - Mohamed Hamaki
+  - Hamaki
+  country: مصر
+  country_code: EG
+  lyricfind_slug: null
+  itunes_artist_id: null
+  musicbrainz_id: null
+  fnanen_url: null
+  kalimataghani_url: null
+  selected: true
+  notes: ''
